@@ -1,0 +1,12 @@
+
+public String getDeskripsi_ulasan(){
+    return deskripsi_ulasan;
+}
+
+public String getIcon_bintang(){
+    return icon_bintang;
+}
+
+public String getMemberi_ulasan(){
+    return memberi_ulasan;
+}

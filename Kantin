@@ -1,0 +1,64 @@
+
+package entitas_kelompok_6;
+
+
+public class kantin_kelompok_6 {
+    private String id_kantin;
+    private String alamat_kantin;
+    private String jadwal_kantin;
+    private String review_kantin;
+    private String ubahInfoKantin;
+    
+    public kantin_kelompok_6(String Id_Kantin, String Alamat_Kantin, String Jadwal_Kantin, String Review_Kantin, String UbahInfoKantin){
+        
+        id_kantin = Id_Kantin;
+        alamat_kantin = Alamat_Kantin;
+        jadwal_kantin = Jadwal_Kantin;
+        review_kantin = Review_Kantin;
+        ubahInfoKantin = UbahInfoKantin;
+    
+    }
+    
+    public String getId_kantin(){
+        return id_kantin;
+    }
+    
+    public String getAlamat_kantin(){
+        return alamat_kantin;
+    }
+    
+    public String getJadwal_kantin(){
+        return jadwal_kantin;
+    }
+    
+    public String getReview_kantin(){
+        return review_kantin;
+    }
+    
+    public String getUbahInfoKantin(){
+        return ubahInfoKantin;
+    }
+    
+    public void id_kantin(String Id_Kantin){
+        id_kantin = Id_Kantin;
+    }
+    
+    public void alamat_kantin(String Alamat_Kantin){
+        alamat_kantin = Alamat_Kantin;
+    }
+    
+    public void jadwal_kantin(String Jadwal_Kantin){
+        jadwal_kantin = Jadwal_Kantin;
+    }
+    
+    public void review_kantin(String Review_Kantin){
+        review_kantin = Review_Kantin;
+    }
+    
+    public void ubahInfoKantin(String UbahInfoKantin){
+        ubahInfoKantin = UbahInfoKantin;
+    }
+}
+    
+    
+    

@@ -1,0 +1,49 @@
+
+package relasi_kelompok_6;
+
+
+public class pengiriman_kelompok_6 {
+    
+    private String id_order_pengiriman;
+    private String alamat_pelanggan_pengiriman;
+    private String waktu_pengiriman;
+    private String nama_menu;
+    
+    public pengiriman_kelompok_6(String Id_Order_Pengiriman, String Alamat_Pelanggan_Pengiriman, String Waktu_Pengiriman, String Nama_Menu){
+        
+        id_order_pengiriman = Id_Order_Pengiriman;
+        alamat_pelanggan_pengiriman = Alamat_Pelanggan_Pengiriman;
+        waktu_pengiriman = Waktu_Pengiriman;
+        nama_menu = Nama_Menu;
+    }
+    
+    public String getId_order_pengiriman(){
+        
+        return id_order_pengiriman;
+    }
+    
+    public String getAlamat_pelanggan_pengiriman(){
+        
+        return alamat_pelanggan_pengiriman;
+    }
+    
+    public String getWaktu_pengiriman(){
+        
+        return waktu_pengiriman;
+    }
+    
+    public String getNama_menu(){
+        
+        return nama_menu;
+    }
+    
+    public void setId_order_pengiriman(String Id_Order_Pengiriman){
+   
+        id_order_pengiriman = Id_Order_Pengiriman;
+    }
+    
+    public void setAlamat_pelanggan_pengiriman(String Alamat_Pelanggan_Pengiriman){
+        
+        alamat_pelanggan_pengiriman = Alamat_Pelanggan_Pengiriman;
+    }
+}

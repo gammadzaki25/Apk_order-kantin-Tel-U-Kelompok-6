@@ -1,0 +1,58 @@
+package relasi_kelompok_6;
+
+
+public class order_kelompok_6 {
+    
+    private String id_order;
+    private String total_porsi_order;
+    private String total_harga;
+    private String catatan_order;
+    
+    public order_kelompok_6(String Id_Order, String Total_Porsi_Order, String Total_Harga, String Catatan_Order){
+       
+        id_order = Id_Order;
+        total_porsi_order = Total_Porsi_Order;
+        total_harga = Total_Harga;
+        catatan_order = Catatan_Order;
+    }
+    
+    public String getId_order(){
+        
+        return id_order;
+    }
+    
+    public String getTotal_porsi_order(){
+        
+        return total_porsi_order;
+    }
+    
+    public String getTotal_harga(){
+        
+        return total_harga;
+    }
+    
+    public String getCatatan_order(){
+        
+        return catatan_order;
+    }
+    
+    public void setId_order(String Id_Order){
+        
+        id_order = Id_Order;
+    }
+    
+    public void setTotal_porsi_order(String Total_Porsi_Order){
+        
+        total_porsi_order = Total_Porsi_Order;
+    }
+    
+    public void setTotal_Harga(String Total_Harga){
+        
+        total_harga = Total_Harga;
+    }
+    
+    public void setCatatan_order(String Catatan_Order){
+        
+        catatan_order = Catatan_Order;
+    }
+}

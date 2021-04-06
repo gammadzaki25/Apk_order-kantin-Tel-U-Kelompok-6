@@ -1,0 +1,71 @@
+package entitas_kelompok_6;
+
+
+public class user_kelompok_6 {
+    
+    private String id_user;
+    private String password;
+    private String nama_user; 
+    private String no_hp_user;
+    private String login_status;
+    
+    public user_kelompok_6(String Id_User, String Password,String Nama_User,String No_Hp_User, String Login_Status){
+        
+        id_user = Id_User;
+        password = Password;
+        nama_user = Nama_User;
+        no_hp_user = No_Hp_User;
+        login_status = Login_Status;
+    }
+    
+    public String getId_user(){
+        
+        return id_user;
+    }
+    
+    public String getPassword(){
+        
+        return password;
+    }
+    
+    public String getNama_user(){
+        
+        return nama_user;
+    }
+    
+    public String getNo_hp_user(){
+        
+        return no_hp_user;
+    }
+    
+    public String getLogin_Status(){
+        
+        return login_status;
+    }
+    
+    public void setId_user(String Id_User){
+        
+        id_user = Id_User;
+    }
+    
+    public void setPassword(String Password){
+        
+        password = Password;
+    }
+    
+    public void setNama_user(String Nama_User){
+        
+        nama_user = Nama_User;
+    }
+    
+    public void setNo_hp_user(String No_Hp_User){
+        
+        no_hp_user = No_Hp_User;
+    }
+    
+    public void setLogin_status(String Login_Status){
+        
+        login_status = Login_Status;
+    }
+    
+}

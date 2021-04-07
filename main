@@ -1,0 +1,219 @@
+
+package entitas_kelompok_6;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+
+public class main_kelompok_6 {
+    
+    public static void main(String[] args) throws IOException {
+        
+        int pilihan, pilih_kantin;
+        String user, pass;
+        
+        BufferedReader br = new BufferedReader (new InputStreamReader (System.in));
+        pelanggan_kelompok_6 pelanggan = new pelanggan_kelompok_6();
+        driver_kelompok_6 driver = new driver_kelompok_6();
+        
+        
+        
+        Scanner key = new Scanner(System.in);
+        System.out.println("Login Sebagai : ");
+        System.out.println("1. Pelanggan");
+        System.out.println("2. Driver");
+        System.out.println(" ") ;
+        System.out.print("Anda Login sebagai :") ;
+        pilihan = key.nextInt();
+        System.out.println("=================================") ;
+        
+        if (pilihan == 1){
+            System.out.println("Anda Login sebagai pelanggan") ;
+            
+            user_kelompok_6 user1 = new user_kelompok_6();
+            user1.setId_user("NagashiAs");
+            user1.setPassword("Java123");
+            pelanggan.setNama_pelanggan("Muhammad Nagashi Iswahyunianto Wibowo");
+            pelanggan.setAlamat_pelanggan("GD. 4 LIKI, Asrama Putra Telkom University");
+            pelanggan.setEmail_pelanggan("nagashias17@gmail.com");
+            pelanggan.setNo_hp_pelanggan("085346566960");
+            
+            list_menu_kelompok_6 kantin1_menu1 = new list_menu_kelompok_6("1. Nasi Goreng", 10000, 10, " Nasi yang digoreng dengan minyak. Dibumbui dengan kecap manis, bawang merah, bawang putih, asam jawa, lada dan bumbu-bumbu lainnya; seperti telur, ayam, dan kerupuk");
+            list_menu_kelompok_6 kantin1_menu2 = new list_menu_kelompok_6("2. Mie Goreng", 12000, 10, " Mie yang digoreng dengan minyak. Dibumbui dengan kecap manis, bawang merah, bawang putih, asam jawa, lada dan bumbu-bumbu lainnya; seperti telur, dan kerupuk");
+            list_menu_kelompok_6 kantin1_menu3 = new list_menu_kelompok_6("3. Nasi Goreng", 14000, 10, " ayam yang dipanggang di atas arang. Dibumbui dengan kecap manis");
+            list_menu_kelompok_6 kantin1_menu4 = new list_menu_kelompok_6("4. Es Teh", 3000, 10, "teh manis yang diberi batu es");
+            list_menu_kelompok_6 kantin1_menu5 = new list_menu_kelompok_6("5. Teh Panas", 2000, 10, "Teh manis yang panas");
+            list_menu_kelompok_6 kantin1_menu6 = new list_menu_kelompok_6("6. Es Jeruk", 3000, 10, "jeruk yang diperas, kemudian diberi batu es");
+            
+            list_menu_kelompok_6 kantin2_menu1 = new list_menu_kelompok_6("1. Nasi + Chicken Katsu ", 15000, 10, " Nasi putih dan chicken katsu");
+            list_menu_kelompok_6 kantin2_menu2 = new list_menu_kelompok_6("2. Nasi + telur ", 8000, 10, "Nasi putih dan telur mati sapi");
+            list_menu_kelompok_6 kantin2_menu3 = new list_menu_kelompok_6("3. Chciken Steak", 18000, 10, " terdiri dari sepotong dagin ayam yang diolah dengan tepung berbumbu dan penggorengan. Kemudian diberi saus steak");
+            list_menu_kelompok_6 kantin2_menu4 = new list_menu_kelompok_6("4. Es Teh", 3000, 10, "teh manis yang diberi batu es");
+            list_menu_kelompok_6 kantin2_menu5 = new list_menu_kelompok_6("5. Teh Panas", 2000, 10, "Teh manis yang panas");
+            list_menu_kelompok_6 kantin2_menu6 = new list_menu_kelompok_6("6. Es Sirup", 4000, 10, "sirup marjan disi oleh air, kemudian diberi batu es");
+            
+            list_menu_kelompok_6 kantin3_menu1 = new list_menu_kelompok_6("1. Nasi + Soto Ayam", 10000, 10, " Nasi putih dan Soto Ayam");
+            list_menu_kelompok_6 kantin3_menu2 = new list_menu_kelompok_6("2. Nasi + Rawon ", 18000, 10, "Nasi putih dan Rawon");
+            list_menu_kelompok_6 kantin3_menu3 = new list_menu_kelompok_6("3. Beef Steak", 22000, 10, " terdiri dari sepotong dagin bistik yang diolah dengan tepung berbumbu dan penggorengan. Kemudian diberi saus steak");
+            list_menu_kelompok_6 kantin3_menu4 = new list_menu_kelompok_6("4. Es Teh", 3000, 10, "teh manis yang diberi batu es");
+            list_menu_kelompok_6 kantin3_menu5 = new list_menu_kelompok_6("5. Teh Panas", 2000, 10, "Teh manis yang panas");
+            list_menu_kelompok_6 kantin3_menu6 = new list_menu_kelompok_6("6. Es Sirup", 4000, 10, "sirup marjan disi oleh air, kemudian diberi batu es");
+            
+            System.out.println("=============LOGIN===============");
+            System.out.print("1.ID User     :   ") ; user = br.readLine(); 
+            System.out.println(" ");
+            System.out.print("2.Password    :   ") ; pass = br.readLine();
+        
+            if(user.equals(user1.getId_user())&& pass.equals(user1.getPassword()))
+            {
+                System.out.println("=================================");
+                System.out.println("      *** Login Sukses ***");
+                System.out.println(" Selamat Datang ");
+                pelanggan.infoPelanggan(user1);
+                System.out.println("=================================");
+     
+            } else {
+                System.out.println("=================================");
+                System.out.println("       *** Login Gagal***");
+                System.out.println("=================================");
+            do{
+                System.out.println("=============LOGIN===============");
+                System.out.print("1.ID User            :   "); user=br.readLine();
+                System.out.print("2.password           :   "); pass=br.readLine();
+                
+            }while(user.equals(user1.getId_user())&& pass.equals(user1.getPassword()));
+            }
+            
+            
+            System.out.println("======================Nama KANTIN=======================");
+            
+            
+            kantin_kelompok_6 kantin1 = new kantin_kelompok_6();
+            kantin1.setId_kantin("Kantin GKU ");
+            kantin1.setAlamat_kantin("Jl. Telekomunikasi ");
+            kantin1.setJadwal_kantin("Pukul 08:00 - 17:00");
+            
+            kantin_kelompok_6 kantin2 = new kantin_kelompok_6();
+            kantin2.setId_kantin("Kantin Asrama Putra");
+            kantin2.setAlamat_kantin("Jl. Telekomunikasi ");
+            kantin2.setJadwal_kantin("Pukul 08:00 - 17:00");
+            
+            kantin_kelompok_6 kantin3 = new kantin_kelompok_6();
+            kantin3.setId_kantin("Kantin Asrama Putri");
+            kantin3.setAlamat_kantin("Jl. Telekomunikasi ");
+            kantin3.setJadwal_kantin("Pukul 08:00 - 17:00");
+            
+            System.out.println(" ");
+            System.out.print("1.");
+            kantin1.infoKantin();
+            System.out.println(" ");
+            System.out.print("2.");
+            kantin2.infoKantin();
+            System.out.println(" ");
+            System.out.print("3.");
+            kantin3.infoKantin();
+            System.out.println(" ");
+            
+            System.out.println("=================================") ;
+            System.out.print(" Pilih Kantin : ") ;
+            pilih_kantin = key.nextInt();
+            
+            if (pilih_kantin == 1){
+            
+            kantin1.infoKantin();
+            System.out.println("======================MENU MAKANAN=======================");
+            kantin1_menu1.infoListmakanan();
+            System.out.println(" ");
+            kantin1_menu2.infoListmakanan();
+            System.out.println(" ");
+            kantin1_menu3.infoListmakanan();
+            
+            System.out.println(" ");
+            System.out.println("======================MENU MINUMAN=======================");
+            kantin1_menu4.infoListminuman();
+            System.out.println(" ");
+            kantin1_menu5.infoListminuman();
+            System.out.println(" ");
+            kantin1_menu6.infoListminuman();
+                    
+            } else if(pilih_kantin == 2){
+            
+            kantin2.infoKantin();
+            System.out.println("======================MENU MAKANAN=======================");
+            kantin2_menu1.infoListmakanan();
+            System.out.println(" ");
+            kantin2_menu2.infoListmakanan();
+            System.out.println(" ");
+            kantin2_menu3.infoListmakanan();
+            
+            System.out.println(" ");
+            System.out.println("======================MENU MINUMAN=======================");
+            kantin2_menu4.infoListminuman();
+            System.out.println(" ");
+            kantin2_menu5.infoListminuman();
+            System.out.println(" ");
+            kantin2_menu6.infoListminuman();
+            
+            } else if(pilih_kantin == 3){
+                
+            kantin3.infoKantin();
+            System.out.println("======================MENU MAKANAN=======================");
+            kantin3_menu1.infoListmakanan();
+            System.out.println(" ");
+            kantin3_menu2.infoListmakanan();
+            System.out.println(" ");
+            kantin3_menu3.infoListmakanan();
+            
+            System.out.println(" ");
+            System.out.println("======================MENU MINUMAN=======================");
+            kantin3_menu4.infoListminuman();
+            System.out.println(" ");
+            kantin3_menu5.infoListminuman();
+            System.out.println(" ");
+            kantin3_menu6.infoListminuman();
+            
+            } else {
+                System.out.println("Kantin tidak ditemukan");
+            }
+
+        } else if ( pilihan == 2){
+            
+            System.out.println("Anda Login sebagai driver");
+            user_kelompok_6 user3 = new user_kelompok_6();
+            user3.setId_user("RizalSyalman12");
+            user3.setPassword("Sql123");
+            driver.setNamadriver("Rizal Syalman");
+            driver.setNohpdriver("085234566787");
+            
+            System.out.println("=============LOGIN===============");
+            System.out.print("1.ID User     :   ") ; user = br.readLine(); 
+            System.out.println(" ");
+            System.out.print("2.Password    :   ") ; pass = br.readLine();
+        
+            if(user.equals(user3.getId_user())&& pass.equals(user3.getPassword()))
+            {
+                System.out.println("=================================");
+                System.out.println("      *** Login Sukses ***");
+                System.out.println(" Selamat Datang ");
+                driver.infoDriver(user3);
+                System.out.println("=================================");
+     
+            } else {
+                System.out.println("=================================");
+                System.out.println("       *** Login Gagal***");
+                System.out.println("=================================");
+            do{
+                System.out.println("=============LOGIN===============");
+                System.out.print("1.ID User            :   "); user=br.readLine();
+                System.out.print("2.password           :   "); pass=br.readLine();
+                
+            }while(user.equals(user3.getId_user())&& pass.equals(user3.getPassword()));
+            }
+            
+        } else {
+            System.out.println("Pilihan tidak ada");
+        }
+    }
+}

@@ -1,49 +1,32 @@
 
-package relasi_kelompok_6;
+package entitas_kelompok_6;
 
+public class driver_kelompok_6 extends user_kelompok_6{
+    
 
-public class pengiriman_kelompok_6 {
+    private String namadriver;
+    private String nohpdriver;
     
-    private String id_order_pengiriman;
-    private String alamat_pelanggan_pengiriman;
-    private String waktu_pengiriman;
-    private String nama_menu;
-    
-    public pengiriman_kelompok_6(String Id_Order_Pengiriman, String Alamat_Pelanggan_Pengiriman, String Waktu_Pengiriman, String Nama_Menu){
-        
-        id_order_pengiriman = Id_Order_Pengiriman;
-        alamat_pelanggan_pengiriman = Alamat_Pelanggan_Pengiriman;
-        waktu_pengiriman = Waktu_Pengiriman;
-        nama_menu = Nama_Menu;
+ 
+
+    public void setNamadriver(String Nama_driver){
+        this.namadriver = Nama_driver;
+    }
+    public void setNohpdriver(String Nohp_driver){
+        this.nohpdriver = Nohp_driver;
+    }
+
+    public String getNamadriver(){
+        return namadriver;
+    }
+    public String getNohpdriver(){
+        return nohpdriver;
     }
     
-    public String getId_order_pengiriman(){
+    public void infoDriver(user_kelompok_6 user3){
         
-        return id_order_pengiriman;
-    }
-    
-    public String getAlamat_pelanggan_pengiriman(){
-        
-        return alamat_pelanggan_pengiriman;
-    }
-    
-    public String getWaktu_pengiriman(){
-        
-        return waktu_pengiriman;
-    }
-    
-    public String getNama_menu(){
-        
-        return nama_menu;
-    }
-    
-    public void setId_order_pengiriman(String Id_Order_Pengiriman){
-   
-        id_order_pengiriman = Id_Order_Pengiriman;
-    }
-    
-    public void setAlamat_pelanggan_pengiriman(String Alamat_Pelanggan_Pengiriman){
-        
-        alamat_pelanggan_pengiriman = Alamat_Pelanggan_Pengiriman;
+        System.out.println(" ID Driver          : " + user3.getId_user());
+        System.out.println(" Nama Driver        : " + getNamadriver());
+        System.out.println(" No Hp Driver       : " + getNohpdriver());
     }
 }

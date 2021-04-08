@@ -1,12 +1,39 @@
+package entitas_kelompok_6;
 
-public String getDeskripsi_ulasan(){
-    return deskripsi_ulasan;
-}
 
-public String getIcon_bintang(){
-    return icon_bintang;
-}
+public class kantin_kelompok_6 {
 
-public String getMemberi_ulasan(){
-    return memberi_ulasan;
+    private String icon_bintang;
+    private String deskripsi_ulasan;
+    
+    public order_kelompok_6(String Icon_bintang, String Deskripsi_ulasan){
+       
+        icon_bintang = Icon_bintang;
+        deskripsi_ulasan = Deskripsi_ulasan;
+ 
+    }
+
+    public void setIcon_Bintang(String Icon_bintang){
+
+        icon_bintang = Icon_bintang
+ 
+    }
+
+    public void setDeskripsi_Ulasan(String Deskripsi_ulasan){
+
+        deskripsi_ulasan = Deskripsi_ulasan
+ 
+    }
+
+    public String getDeskripsi_Ulasan(){
+ 
+        return deskripsi_ulasan;
+ 
+    }
+
+    public String getIcon_bintang(){
+ 
+        return icon_bintang;
+ 
+    }
 }

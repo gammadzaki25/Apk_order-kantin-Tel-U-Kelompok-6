@@ -25,13 +25,13 @@ public class kantin_kelompok_6 {
  
     }
 
-    public String getDeskripsi_Ulasan(){
+    public String getDeskripsi_Ulasan(String Icon_bintang){
  
         return deskripsi_ulasan;
  
     }
 
-    public String getIcon_bintang(){
+    public String getIcon_bintang(String Deskripsi_ulasan){
  
         return icon_bintang;
  

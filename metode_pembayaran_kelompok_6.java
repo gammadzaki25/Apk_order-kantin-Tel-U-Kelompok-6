@@ -14,17 +14,6 @@ public class metode_pembayaran_kelompok_6 {
 
     }
     
-    public String getEmoney(String Emoney){
-        
-        return emoney;
-    }
-    
-    public String getTunai(String Tunai){
-        
-        return tunai;
-    }
-    
-    
     public void setEmoney(String Emoney){
         
         emoney = Emoney;
@@ -35,5 +24,13 @@ public class metode_pembayaran_kelompok_6 {
         tunai = Tunai;
     }
     
-   
+    public String getEmoney(){
+        
+        return emoney;
+    }
+    
+    public String getTunai(){
+        
+        return tunai;
+    }
 }

@@ -1,19 +1,91 @@
-package relasi_kelompok_6;
+
+import entitas_kelompok_6.list_menu_kelompok_6;
+import entitas_kelompok_6.pelanggan_kelompok_6;
+import java.util.Scanner;
 
 
-public class order_kelompok_6 {
+public class order_kelompok_6 extends list_menu_kelompok_6{
     
     private String id_order;
-    private String total_porsi_order;
-    private String total_harga;
+    private int total_porsi_order;
+    private int total_harga;
     private String catatan_order;
+
+    public order_kelompok_6(String nama, int harga, int jum, String deskripsi) {
+        super(nama, harga, jum, deskripsi);
+    }
     
-    public order_kelompok_6(String Id_Order, String Total_Porsi_Order, String Total_Harga, String Catatan_Order){
+    
+    public void infoOrder(order_kelompok_6[] order){
+        for (int i = 0 ; i < 5 ; i++) {
+            System.out.println(" ");
+            System.out.println("ID order        : " + order[i].getId_order());
+            System.out.println("Total Porsi     : " + order[i].getTotal_porsi_order());
+            System.out.println("Total Harga     : " + order[i].getTotal_harga());
+            System.out.println("Catatan order   : " + order[i].getCatatan_order());
+            System.out.println(" ");
+        }
+    }
+    
+    public void AddOrder_kelompok_6(int no,int pilihmenu,list_menu_kelompok_6[] makanan){
+        Scanner key = new Scanner(System.in);
        
-        id_order = Id_Order;
-        total_porsi_order = Total_Porsi_Order;
-        total_harga = Total_Harga;
-        catatan_order = Catatan_Order;
+        if (pilihmenu == 0) {
+            
+            this.id_order = "NAS" + (0 + no );
+            super.setNama_Menu(makanan[pilihmenu].getNama_Menu()); 
+            System.out.print("Masukan Jumlah Porsi    : " );
+            this.total_porsi_order = key.nextInt();
+            this.total_harga = makanan[pilihmenu].getHarga_Menu() * this.total_porsi_order ;
+            System.out.print("Masukan Catatan Order   : " );
+            this.catatan_order = key.nextLine();
+            this.catatan_order = key.nextLine();
+            System.out.println("==============================================");
+        
+        } else if (pilihmenu == 1) {
+           
+            this.id_order = "GDA" + (1 + no );
+            super.setNama_Menu(makanan[pilihmenu].getNama_Menu()); 
+            System.out.print("Masukan Jumlah Porsi    : " );
+            this.total_porsi_order = key.nextInt();
+            this.total_harga = makanan[pilihmenu].getHarga_Menu() * this.total_porsi_order ;
+            System.out.print("Masukan Catatan Order   : " );
+            this.catatan_order = key.nextLine();
+            this.catatan_order = key.nextLine();
+        
+        } else if(pilihmenu == 2){
+            
+            this.id_order = "HAD" + (2 + no );
+            super.setNama_Menu(makanan[pilihmenu].getNama_Menu()); 
+            System.out.print("Masukan Jumlah Porsi    : " );
+            this.total_porsi_order = key.nextInt();
+            this.total_harga = makanan[pilihmenu].getHarga_Menu() * this.total_porsi_order ;
+            System.out.print("Masukan Catatan Order   : " );
+            this.catatan_order = key.nextLine();
+            this.catatan_order = key.nextLine();
+        
+        } else if(pilihmenu == 3){
+            
+            this.id_order = "CDC" + (3 + no );
+            super.setNama_Menu(makanan[pilihmenu].getNama_Menu()); 
+            System.out.print("Masukan Jumlah Porsi    : " );
+            this.total_porsi_order = key.nextInt();
+            this.total_harga = makanan[pilihmenu].getHarga_Menu() * this.total_porsi_order ;
+            System.out.print("Masukan Catatan Order   : " );
+            this.catatan_order = key.nextLine();
+            this.catatan_order = key.nextLine();
+        
+        } else if(pilihmenu == 4){
+            
+            this.id_order = "QER" + (4 + no );
+            super.setNama_Menu(makanan[pilihmenu].getNama_Menu()); 
+            System.out.print("Masukan Jumlah Porsi    : " );
+            this.total_porsi_order = key.nextInt();
+            this.total_harga = makanan[pilihmenu].getHarga_Menu() * this.total_porsi_order ;
+            System.out.print("Masukan Catatan Order   : " );
+            this.catatan_order = key.nextLine();
+            this.catatan_order = key.nextLine();
+        }
     }
     
     public String getId_order(){
@@ -21,12 +93,13 @@ public class order_kelompok_6 {
         return id_order;
     }
     
-    public String getTotal_porsi_order(){
+    public int getTotal_porsi_order(){
         
-        return total_porsi_order;
+        return total_porsi_order ;
+        
     }
     
-    public String getTotal_harga(){
+    public int getTotal_harga(){
         
         return total_harga;
     }
@@ -39,14 +112,16 @@ public class order_kelompok_6 {
     public void setId_order(String Id_Order){
         
         id_order = Id_Order;
+        
     }
     
-    public void setTotal_porsi_order(String Total_Porsi_Order){
+    public void setTotal_porsi_order(int Total_Porsi_Order){
         
         total_porsi_order = Total_Porsi_Order;
+        
     }
     
-    public void setTotal_Harga(String Total_Harga){
+    public void setTotal_Harga(int Total_Harga){
         
         total_harga = Total_Harga;
     }
@@ -54,5 +129,6 @@ public class order_kelompok_6 {
     public void setCatatan_order(String Catatan_Order){
         
         catatan_order = Catatan_Order;
-    }
+    }  
+}
 }

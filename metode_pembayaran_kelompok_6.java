@@ -7,19 +7,19 @@ public class metode_pembayaran_kelompok_6 {
     private String tunai;
 
     
-    public metode_pembayaran_kelompok_6(String Emoney, string Tunai){
+    public metode_pembayaran_kelompok_6(String Emoney, String Tunai){
         
         emoney = Emoney;
         tunai = Tunai;
 
     }
     
-    public String getEmoney(){
+    public String getEmoney(String Emoney){
         
         return emoney;
     }
     
-    public String getTunai(){
+    public String getTunai(String Tunai){
         
         return tunai;
     }

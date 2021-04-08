@@ -3,6 +3,7 @@ package entitas_kelompok_6;
 
 
 public class list_menu_kelompok_6 {
+    
     private String nama_menu;
     private int harga_menu;
     private int jumlah_porsi;
@@ -39,5 +40,17 @@ public class list_menu_kelompok_6 {
     }
     public String getDeskripsi_Menu(){
         return deskripsi_menu;
+    }
+    
+    public void infoListmakanan(list_menu_kelompok_6[] kantin1_menu){
+        
+        for (int i = 0 ; i < 5 ; i++) {
+            System.out.println(" " + kantin1_menu[i].getNama_Menu());
+            System.out.println("Harga           : " + kantin1_menu[i].getHarga_Menu());
+            System.out.println("Jumlah Porsi    : " + kantin1_menu[i].getJumlah_Porsi());
+            System.out.println("Deskripsi Menu  : " + kantin1_menu[i].getDeskripsi_Menu());
+            System.out.println(" ");
+        }
+        
     }
 }

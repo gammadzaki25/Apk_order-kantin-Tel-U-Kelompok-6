@@ -9,24 +9,29 @@ public class user_kelompok_6 {
     private String password;
     private String username;
 
-
+// untuk memanggil id_user
     public String getId_user(){
         
         return id_user;
     }
-    
+// untuk memanggil password    
     public String getPassword(){
         
         return password;
     }
-    
+ // untuk menambahkan id_user   
     public void setId_user(String id_user){
         
         this.id_user = id_user;
     }
-    
+ // untuk menambahkan password   
     public void setPassword(String Password){
         
         this.password = Password;
-    }  
+    }
+// untuk menambahkan id_kantin
+    String getId_kantin() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
 }

@@ -1,44 +1,37 @@
 package entitas_kelompok_6;
 
-public class driver_kelompok_6 {
-    private String iddriver;
+public class driver_kelompok_6 extends user_kelompok_6{
+    
+
     private String namadriver;
     private String nohpdriver;
     
-    //membuat constructor untuk driver
-    public driver_kelompok_6(String Iddriver, String Namadriver, String Nohpdriver){
-        iddriver = Iddriver;
-        namadriver = Namadriver;
-        nohpdriver = Nohpdriver;
-    }
-    
-    //membuat setter untuk id_driver
-    public void setIddriver(String Id_driver){
-        iddriver = Id_driver;
-    }
-    
-    //membuat setter untuk nama_driver
+ 
+    //membuat setter untuk nama driver
     public void setNamadriver(String Nama_driver){
-        namadriver = Nama_driver;
+        this.namadriver = Nama_driver;
     }
     
-    //membuat setter untuk no_hp_driver
+    //membuat setter untuk no HP driver
     public void setNohpdriver(String Nohp_driver){
-        nohpdriver = Nohp_driver;
+        this.nohpdriver = Nohp_driver;
     }
-    
-    //membuat getter untuk id_driver
-    public String getIddriver(){
-        return iddriver;
-    }
-    
-    //membuat getter untuk nama_driver
+
+    //membuat getter untuk nama driver
     public String getNamadriver(){
         return namadriver;
     }
     
-    //membuat getter untuk no_hp_driver
+    //membuat getter untuk no hp driver
     public String getNohpdriver(){
         return nohpdriver;
+    }
+    
+    //untuk menampilkan info driver
+    public void infoDriver(user_kelompok_6 user3){
+        
+        System.out.println(" ID Driver          : " + user3.getId_user());
+        System.out.println(" Nama Driver        : " + getNamadriver());
+        System.out.println(" No Hp Driver       : " + getNohpdriver());
     }
 }
